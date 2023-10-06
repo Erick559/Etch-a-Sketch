@@ -17,3 +17,15 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+
+.container>div{
+    width:2.5rem;
+    height:2.5rem;
+    border:1px solid black;
+}
+
+.container>div:nth-child(16n+1){
+    width:100%;
+    border:0;
+    height: 0;
+}
