@@ -15,7 +15,6 @@
  
  .container {
      display: flex;
-     flex-wrap: wrap;
      justify-content: space-between;
      align-items: center;
      width: 100rem;
@@ -23,6 +22,7 @@
  }
  
  .sketch-face {
+     display: grid;
      border: 1px solid black;
      width: 50%;
      height: 70%;
@@ -42,4 +42,8 @@
  button {
      width: 11rem;
      height: 4rem;
+ }
+ 
+ .sketch-face div {
+     border: 1px solid black
  }
