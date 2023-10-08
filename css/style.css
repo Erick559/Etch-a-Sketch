@@ -18,6 +18,18 @@
      font-size: 4rem;
  }
  
+ .etch {
+     color: aquamarine;
+ }
+ 
+ .a {
+     color: deeppink;
+ }
+ 
+ .sketch {
+     color: coral;
+ }
+ 
  .container {
      display: flex;
      gap: 7rem;
