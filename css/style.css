@@ -60,6 +60,7 @@
      width: 11rem;
      height: 4rem;
      font-size:2rem;
+     border-radius: 10px;
  }
 
  .black,
@@ -75,7 +76,8 @@
  }
 
  .blue{
-    background-color: aquamarine;
+    background-color:#09B1EC;
+    color: black;
     
  }
 
