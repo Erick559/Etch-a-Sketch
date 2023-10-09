@@ -59,6 +59,33 @@
  button {
      width: 11rem;
      height: 4rem;
+     font-size:2rem;
+ }
+
+ .black,
+ .blue,
+ .rainbow,
+ .reset {
+    font-weight: 700;
+    color: white;
+ }
+
+ .black{
+    background-color:black;
+ }
+
+ .blue{
+    background-color: aquamarine;
+    
+ }
+
+ .rainbow{
+    background:linear-gradient(to right,red, aquamarine 75%, orange);
+    
+ }
+
+ .reset{
+    background-color:darkred;
  }
  
  .sketch-face div {
