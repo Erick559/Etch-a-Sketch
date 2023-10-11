@@ -1,6 +1,7 @@
 const containerDiv = document.querySelector('.container')
 const sketchFace = document.querySelector('.sketch-face')
 const colorSelection = document.querySelector('.color-selection')
+const sizeSelector = document.querySelector('.grid-selection')
 
 function makeGrid(size) {
     sketchFace.style.gridTemplateRows = `repeat(${size}, 1fr)`
@@ -16,8 +17,11 @@ function makeGrid(size) {
     }
 }
 
-
-
+console.log(sizeSelector.value)
 
 
 makeGrid(16)
+
+function getSize(){
+    
+}
