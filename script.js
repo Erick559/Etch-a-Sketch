@@ -22,12 +22,15 @@ submitSize.addEventListener('click', function () {
         sketchFace.appendChild(cell);
     }
 
-    console.log(numDivs)
+    sizeSelector.value=''
 })
 
 resetButton.addEventListener('click' , function(){
     sketchFace.innerHTML = ''
+    sizeSelector.value = ''
 })
+
+
 
 
 
