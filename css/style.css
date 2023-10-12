@@ -46,9 +46,14 @@
  
  .sketch-face {
      display: grid;
-     border: 1px solid black;
-     width: 50%;
-     height: 70%;
+     box-sizing: border-box;
+     width: 50rem;
+     height: 50rem;
+ }
+
+ .cell{
+    margin:0;
+    padding:0;
  }
  
  .color-selection {
