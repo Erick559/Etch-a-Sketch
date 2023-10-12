@@ -27,6 +27,8 @@ const submitSize = document.querySelector('.submit-selection')
 submitSize.addEventListener('click', function () {
     let size = parseInt(sizeSelector.value)
 
+    sketchFace.innerHTML = '';
+    
     sketchFace.style.gridTemplateRows = `repeat(${size}, 1fr)`
     sketchFace.style.gridTemplateColumns = `repeat(${size}, 1fr)`
 
@@ -38,6 +40,8 @@ submitSize.addEventListener('click', function () {
         cell.className = 'cell';
         sketchFace.appendChild(cell);
     }
+
+    console.log(numDivs)
 })
 
 
