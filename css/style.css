@@ -46,16 +46,11 @@
  
  .sketch-face {
      display: grid;
-     box-sizing: border-box;
      width: 50rem;
-     height: 50rem;
- }
+     height: 50rem; 
+     border: 1px solid black;
+    }
 
- .cell{
-    margin:0;
-    padding:0;
- }
- 
  .color-selection {
      display: flex;
      flex-direction: column;
