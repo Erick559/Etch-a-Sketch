@@ -69,6 +69,14 @@
      border-radius: 10px;
  }
 
+ .submit-selection{
+    width:9rem;
+    height:3rem;
+    background-color:#96B6C5;
+    color:#393646;
+    font-weight: 700;
+ }
+
  .black,
  .blue,
  .rainbow,
