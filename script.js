@@ -21,6 +21,8 @@ function makeGrid() {
         cell.className = 'cell';
         sketchFace.appendChild(cell);
     }
+    let cells = document.querySelectorAll('.cell');
+    console.log(cells.length);
 }
 
 makeGrid()
