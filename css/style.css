@@ -13,11 +13,11 @@
      align-items: center;
      height: 100vh;
  }
-
+ 
  @media only screen and (max-width: 600px) {
-    html{
-        margin:0.5rem;
-    }
+     html {
+         margin: 0.5rem;
+     }
  }
  
  h1 {
@@ -47,10 +47,10 @@
  .sketch-face {
      display: grid;
      width: 50rem;
-     height: 50rem; 
+     height: 50rem;
      border: 1px solid black;
-    }
-
+ }
+ 
  .color-selection {
      display: flex;
      flex-direction: column;
@@ -65,68 +65,65 @@
  button {
      width: 11rem;
      height: 4rem;
-     font-size:2rem;
+     font-size: 2rem;
      border-radius: 10px;
  }
-
- .submit-selection{
-    width:9rem;
-    height:2.5rem;
-    background-color:#96B6C5;
-    color:#393646;
-    font-weight: 600;
-    font-size: 1.7rem;
+ 
+ .submit-selection {
+     width: 9rem;
+     height: 2.5rem;
+     background-color: #96B6C5;
+     color: #393646;
+     font-weight: 600;
+     font-size: 1.7rem;
  }
-
+ 
  .black,
  .blue,
  .rainbow,
  .reset {
-    font-weight: 700;
-    color: white;
+     font-weight: 700;
+     color: white;
  }
-
- .black{
-    background-color:black;
+ 
+ .black {
+     background-color: black;
  }
-
- .blue{
-    background-color:#09B1EC;
-    color: black;
-    
+ 
+ .blue {
+     background-color: #09B1EC;
+     color: black;
  }
-
- .rainbow{
-    background:linear-gradient(to right,red, aquamarine 60%, orange);
-    
+ 
+ .rainbow {
+     background: linear-gradient(to right, red, aquamarine 60%, orange);
  }
-
- .reset{
-    background-color:#F24C3D;
+ 
+ .reset {
+     background-color: #F24C3D;
  }
  
  .sketch-face div {
      border: 1px solid black
  }
-
- .selection{
-    display: flex;
-    align-items: flex-end;
-    gap:3rem;
+ 
+ .selection {
+     display: flex;
+     align-items: flex-end;
+     gap: 3rem;
  }
-
- label{
-    font-size: 1.7rem;
-    font-weight: 600;
-    margin-right:1rem;
-
+ 
+ label {
+     font-size: 1.7rem;
+     font-weight: 600;
+     margin-right: 1rem;
  }
-
- input{
-    width:10rem;
-    font-size: 1.4rem;
-    border: 2px solid black;
-    border-radius: 5px;
-    color:coral;
-    font-weight: 600;
+ 
+ input {
+     width: 10rem;
+     font-size: 1.4rem;
+     border: 2px solid black;
+     border-radius: 5px;
+     color: coral;
+     font-weight: 600;
  }
