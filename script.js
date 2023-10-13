@@ -5,7 +5,7 @@ const sizeSelector = document.querySelector('.grid-selection')
 const submitSize = document.querySelector('.submit-selection')
 const resetButton = document.querySelector('.reset')
 
-submitSize.addEventListener('click', function () {
+function makeGrid() {
     let size = parseInt(sizeSelector.value)
 
     sketchFace.innerHTML = '';
@@ -21,19 +21,12 @@ submitSize.addEventListener('click', function () {
         cell.className = 'cell';
         sketchFace.appendChild(cell);
     }
+}
 
-    sizeSelector.value=''
-})
+makeGrid()
 
-resetButton.addEventListener('click' , function(){
-    sketchFace.innerHTML = ''
+submitSize.addEventListener('click', makeGrid)
+
+resetButton.addEventListener('click', function() {
     sizeSelector.value = ''
 })
-
-
-
-
-
-
-
-
