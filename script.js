@@ -26,20 +26,29 @@ function makeGrid() {
         sketchFace.appendChild(cell);
     }
     let cells = document.querySelectorAll('.cell');
+    let isDrawing = false
 
     btnColor.forEach((button, index) => button.addEventListener(
         'click', () => {
             let colorSelected = button.getAttribute('data-selection');
             for (let box of cells) {
-                if (colorSelected == 'rainbow') {
-                    box.addEventListener('mouseover', () => {
-                        box.style.backgroundColor = rainbowColors[Math.floor(Math.random() * rainbowColors.length)];
-                    })
-                } else {
-                    box.addEventListener('mouseover', () => {
-                        box.style.backgroundColor = colorSelected
-                    })
-                }
+                box.addEventListener('mousedown', () => {
+                    isDrawing = true
+                })
+
+                box.addEventListener('mouseup', () => {
+                    isDrawing = false
+                })
+
+                box.addEventListener('mousemove', () => {
+                    if (isDrawing) {
+                        if (colorSelected == 'rainbow') {
+                            box.style.backgroundColor = rainbowColors[Math.floor(Math.random() * rainbowColors.length)]
+                        } else {
+                            box.style.backgroundColor = colorSelected
+                        }
+                    }
+                })
 
                 resetButton.addEventListener('click', function() {
                     box.style.backgroundColor = 'white'
@@ -58,6 +67,7 @@ function makeGrid() {
 
 
 }
+
 
 makeGrid()
 
