@@ -39,15 +39,18 @@ function makeGrid() {
                         box.style.backgroundColor = colorSelected
                     })
                 }
+
+                resetButton.addEventListener('click', function() {
+                    box.style.backgroundColor = 'white'
+                    sizeSelector.value = ''
+                })
             }
         }
     ))
+
+
 }
 
 makeGrid()
 
 submitSize.addEventListener('click', makeGrid)
-
-resetButton.addEventListener('click', function() {
-    sizeSelector.value = ''
-})
