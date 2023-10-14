@@ -54,20 +54,27 @@ function makeGrid() {
                     box.style.backgroundColor = 'white'
                     sizeSelector.value = ''
                 })
-
-                eraseButton.addEventListener('click', function() {
-                    box.addEventListener('mouseover', () => {
-                        box.style.backgroundColor = 'white';
-                    })
-                })
-
             }
         }
     ))
 
+    eraseButton.addEventListener('click', function() {
+        for (let box of cells) {
+            box.addEventListener('mousedown', function() {
+                isDrawing = true
+            })
+            box.addEventListener('mouseup', function() {
+                isDrawing = false
+            })
 
+            box.addEventListener('mousemove', function() {
+                if (isDrawing) {
+                    box.style.backgroundColor = 'white'
+                }
+            })
+        }
+    })
 }
-
 
 makeGrid()
 
