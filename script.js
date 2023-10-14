@@ -4,6 +4,7 @@ const colorSelection = document.querySelector('.color-selection')
 const sizeSelector = document.querySelector('.grid-selection')
 const submitSize = document.querySelector('.submit-selection')
 const resetButton = document.querySelector('.reset')
+const eraseButton = document.querySelector('.erase')
 const btnColor = document.querySelectorAll('[data-selection]')
 let rainbowColors = ['red', 'blue', 'purple', 'violet', 'orange']
 
@@ -44,6 +45,13 @@ function makeGrid() {
                     box.style.backgroundColor = 'white'
                     sizeSelector.value = ''
                 })
+
+                eraseButton.addEventListener('click', function() {
+                    box.addEventListener('mouseover', () => {
+                        box.style.backgroundColor = 'white';
+                    })
+                })
+
             }
         }
     ))
