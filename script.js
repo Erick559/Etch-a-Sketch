@@ -25,12 +25,13 @@ function makeGrid() {
         cell.className = 'cell';
         sketchFace.appendChild(cell);
     }
+    let colorSelected;
     let cells = document.querySelectorAll('.cell');
     let isDrawing = false
 
     btnColor.forEach((button, index) => button.addEventListener(
         'click', () => {
-            let colorSelected = button.getAttribute('data-selection');
+            colorSelected = button.getAttribute('data-selection');
             for (let box of cells) {
                 box.addEventListener('mousedown', () => {
                     isDrawing = true
@@ -74,6 +75,7 @@ function makeGrid() {
             })
         }
     })
+
 }
 
 makeGrid()
